@@ -92,7 +92,7 @@ Object.assign(MediaElementPlayer.prototype, {
 					}
 
 					// 5%
-					const newTime = Math.max(player.currentTime - player.options.defaultSeekBackwardInterval(player), 0);
+					const newTime = Math.max(player.currentTime - player.options.defaultSeekBackwardInterval(player), 0.0);
 					player.setCurrentTime(newTime);
 				}
 			}
