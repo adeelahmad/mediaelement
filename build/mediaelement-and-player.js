@@ -1609,7 +1609,7 @@ Object.assign(_player3.default.prototype, {
 						timeSlider.focus();
 					}
 
-					var newTime = Math.max(player.currentTime - player.options.defaultSeekBackwardInterval(player), 0);
+					var newTime = Math.max(player.currentTime - player.options.defaultSeekBackwardInterval(player), 0.0);
 					player.setCurrentTime(newTime);
 				}
 			}
@@ -5672,7 +5672,7 @@ var DashNativeRenderer = {
 							}
 						}
 					} else {
-						if (value > 0) node[propName] = value;
+						node[propName] = value;
 					}
 				}
 			};
@@ -6354,7 +6354,7 @@ var FlvNativeRenderer = {
 							flvPlayer.load();
 						}
 					} else {
-						if (value > 0) node[propName] = value;
+						node[propName] = value;
 					}
 				}
 			};
@@ -6597,7 +6597,7 @@ var HlsNativeRenderer = {
 							hlsPlayer.attachMedia(node);
 						}
 					} else {
-						if (value > 0) node[propName] = value;
+						node[propName] = value;
 					}
 				}
 			};
@@ -6835,7 +6835,7 @@ var HtmlMediaElement = {
 
 			node['set' + capName] = function (value) {
 				if (_mejs2.default.html5media.readOnlyProperties.indexOf(propName) === -1) {
-					if (value > 0) node[propName] = value;
+					node[propName] = value;
 				}
 			};
 		};

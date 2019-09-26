@@ -1370,7 +1370,7 @@ var DashNativeRenderer = {
 							}
 						}
 					} else {
-						if (value > 0) node[propName] = value;
+						node[propName] = value;
 					}
 				}
 			};
@@ -2052,7 +2052,7 @@ var FlvNativeRenderer = {
 							flvPlayer.load();
 						}
 					} else {
-						if (value > 0) node[propName] = value;
+						node[propName] = value;
 					}
 				}
 			};
@@ -2295,7 +2295,7 @@ var HlsNativeRenderer = {
 							hlsPlayer.attachMedia(node);
 						}
 					} else {
-						if (value > 0) node[propName] = value;
+						node[propName] = value;
 					}
 				}
 			};
@@ -2533,7 +2533,7 @@ var HtmlMediaElement = {
 
 			node['set' + capName] = function (value) {
 				if (_mejs2.default.html5media.readOnlyProperties.indexOf(propName) === -1) {
-					if (value > 0) node[propName] = value;
+					node[propName] = value;
 				}
 			};
 		};
